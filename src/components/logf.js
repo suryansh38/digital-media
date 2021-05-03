@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import "./form.css";
 import{
     Input,
     Button,
@@ -12,18 +13,18 @@ import{
 import Home from "./home.js";
 const Log=(props)=>
 {const {setFlag}=props;
-console.log("props ",props);
+//console.log("props ",props);
    return(
        <Container>
-           <Box>
-<Form > 
-    <FormGroup>
-        <InputGroup>
+         <Content>
+        <Box>
+        <InputGroupAddon>
         <Input
         type="text"
         name="todo"
         id="todo"
         placeholder="Email id"
+        padding="100px"
         />
         <Input
         type="text"
@@ -31,15 +32,14 @@ console.log("props ",props);
         id="todo"
         placeholder="Password"
         />
+        </InputGroupAddon>
         <InputGroupAddon>
-            <Button onClick={()=>{setFlag(0)}}  color="success" href="/home">
+            <Button  href="/home">
                 Login 
             </Button>
         </InputGroupAddon>
-        </InputGroup>
-    </FormGroup>
-</Form>
-</Box>
+        </Box>
+        </Content>
 <BgImage/>
 
 </Container>
@@ -73,7 +73,7 @@ const BgImage = styled.div`
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("/images/login-background.jpg");
+  background-image: url("/images/bg3.jpg");
   position: absolute;
   top: 0;
   right: 0;

@@ -6,11 +6,15 @@ const Login = () => {
       <Content>
         <Box>
           <BoxLogoOne src="/images/cta-logo-one.svg" alt="ghghf"/>
-          <SignUp>GET ALL THERE</SignUp>
+          <SignUp >
+            <a href="/logf">
+              GET ALL
+            </a>
+          </SignUp>
           <Description>
-            Get Premier Access to Raya and the Last Dragon for an additional fee
-            with a Disney+ subscription. As of 03/26/21, the price of Disney+
-            and The Disney Bundle will increase by $1.
+            Get Premier Access Pirates for an additional fee
+            with a Disney+ subscription. As of 03/05/21, the price of Disney+
+            and The Disney Bundle will increase by 399 INR.
           </Description>
           <BoxLogoTwo src="/images/cta-logo-two.png" alt="Jhh" />
         </Box>
@@ -47,7 +51,7 @@ const BgImage = styled.div`
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("/images/login-background.jpg");
+  background-image: url("/images/bg.jpg");
   position: absolute;
   top: 0;
   right: 0;
@@ -87,8 +91,8 @@ const SignUp = styled.a`
 `;
 
 const Description = styled.p`
-  color: hsla(0, 0%, 95.3%, 1);
-  font-size: 11px;
+  color: white;
+  font-size: 13px;
   margin: 0 0 24px;
   line-height: 1.5;
   letter-spacing: 1.5px;

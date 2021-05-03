@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Header=(props)=>
 {const [flag,setFlag]=useState(1);
-    console.log("flag ",flag);
+    //console.log("flag ",flag);
         return (
             <Nav>
               <Logo>
@@ -12,7 +12,7 @@ const Header=(props)=>
               </Logo>
         
               {flag ? (
-                <Login  setFlag={setFlag} href="/logf">Login</Login>
+                <Login  href="/logf">Login</Login>
               ) : (
                 <>
                   <NavMenu>
