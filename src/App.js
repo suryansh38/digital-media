@@ -9,6 +9,7 @@ import './App.css';
 import Login from "./components/login.js";
 import Header from "./components/header.js";
 import Home from "./components/home.js";
+import Log from "./components/logf.js";
 
 function App() {
   return (
@@ -17,10 +18,12 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Header/>
-            <Login/>
+             <Login/>
             </Route>
           <Route path="/home">
             <Home />
+          </Route>
+          <Route path="/logf" component={Log}>
           </Route>
           </Switch>
         </Router>

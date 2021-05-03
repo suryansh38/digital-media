@@ -1,17 +1,18 @@
-//import { useEffect } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 //import { useDispatch, useSelector } from "react-redux";
 
 const Header=(props)=>
-{
+{const [flag,setFlag]=useState(1);
+    console.log("flag ",flag);
         return (
             <Nav>
               <Logo>
                 <img src="/images/logo.svg" alt="Disney+" />
               </Logo>
         
-              {0 ? (
-                <Login href="/home">Login</Login>
+              {flag ? (
+                <Login  setFlag={setFlag} href="/logf">Login</Login>
               ) : (
                 <>
                   <NavMenu>
@@ -39,6 +40,7 @@ const Header=(props)=>
                       <img src="/images/series-icon.svg" alt="SERIES" />
                       <span>SERIES</span>
                     </a>
+                    
                   </NavMenu>
                   <SignOut>
                     <UserImg />
